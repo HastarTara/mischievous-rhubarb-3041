@@ -17,25 +17,21 @@
     a {
       display: inline-block;
       transition: all 0.5s;
-      font-size: 4vw;           /* scales with viewport width */
-      padding: 2vw 4vw;         /* scales with viewport */
+      font-size: clamp(24px, 6vw, 72px);           /* min 24px, scales up to 72px */
+      padding: clamp(16px, 4vw, 48px) clamp(32px, 8vw, 96px);  /* chunky padding */
       background-color: white;
       color: #000;
       cursor: pointer;
       border: none;
-      border-radius: 2px;
+      border-radius: 8px;
       text-decoration: none;
       text-align: center;
       box-shadow:
-        0.2vw 0.2vw 0px hsl(0, 0%, 90%),
-        0.4vw 0.4vw 0px hsl(0, 0%, 80%),
-        0.6vw 0.6vw 0px hsl(0, 0%, 70%),
-        0.8vw 0.8vw 0px hsl(0, 0%, 60%),
-        1vw 1vw 0px hsl(0, 0%, 50%),
-        1.2vw 1.2vw 0px hsl(0, 0%, 40%),
-        1.4vw 1.4vw 0px hsl(0, 0%, 30%),
-        1.6vw 1.6vw 0px hsl(0, 0%, 20%),
-        1.8vw 1.8vw 0px hsl(0, 0%, 10%);
+        clamp(4px, 1vw, 18px) clamp(4px, 1vw, 18px) 0px hsl(0, 0%, 90%),
+        clamp(8px, 2vw, 36px) clamp(8px, 2vw, 36px) 0px hsl(0, 0%, 80%),
+        clamp(12px, 3vw, 54px) clamp(12px, 3vw, 54px) 0px hsl(0, 0%, 70%),
+        clamp(16px, 4vw, 72px) clamp(16px, 4vw, 72px) 0px hsl(0, 0%, 60%),
+        clamp(20px, 5vw, 90px) clamp(20px, 5vw, 90px) 0px hsl(0, 0%, 50%);
     }
 
     a:hover {
