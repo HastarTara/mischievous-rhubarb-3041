@@ -3,12 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>QR Sheet</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;           /* full screen height */
+      margin: 0;
+      background-color: #f0f0f0; /* optional pleasant background */
+      font-family: sans-serif;
+    }
+
+    a {
+      display: inline-block;
+      padding: 2vw 5vw;       /* scales with screen size */
+      font-size: 3vw;         /* scales with viewport width */
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    /* optional: hover effect */
+    a:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-  <h1>Printable QR Sheet</h1>
-  <p>
-    <a href="print_me.pdf" target="_blank">Click here to open PDF</a>
-  </p>
+  <a href="print_me.pdf" target="_blank">Open and Print Me</a>
 </body>
 </html>
-
